@@ -1,0 +1,10 @@
+.Header{
+    background-color: var(--gray-800);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 0;
+}.Header img{
+    height: 2rem;
+}.Header h1{
+    margin-left:1rem;
+}

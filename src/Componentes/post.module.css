@@ -1,0 +1,121 @@
+.post{
+    background-color: #202024;
+   /* height: 38.81rem;*/
+    display:block;
+    border-radius: 8px;
+    padding-bottom: 2.5rem;
+   
+}.post + .post{
+    margin-top: 2rem;
+}
+
+.avatar{
+    height: 3.75rem;
+    width: 3.75rem;
+    margin-top: 2.5rem;
+    border: 1px solid var(--gray-800);
+    outline: 2px solid var(--green-500);
+    border-radius: 8px;
+    box-sizing: initial;
+   
+}.post strong{
+    color: #E1E1E6;
+    line-height: 1.6rem;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+   
+}.UserInfo{
+    margin-top: 2,5rem;
+    ;
+    
+}.content{
+    display: block;
+   
+    margin: 0 2.5rem;
+}.post header{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 1.5rem
+   
+}
+.content a{
+    color: var(--green-500);
+    font-weight: 700;
+}.content a:hover{
+    color: #00B37E;
+}
+   
+ .author{
+    display: flex;
+    margin-left: 2.5rem;
+}.authorinfo{
+    margin-top: 2.9375rem;
+    margin-left: 1rem;
+}.post time{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right:2.5rem;
+    margin-top: 3.6875rem;
+   
+    
+}.post span{
+    font-size:0.875rem;
+    color: #8D8D99;
+}.CommentForm{
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    height: 1fr;
+    padding: 0 2.5rem;
+}.CommentForm > strong{
+    line-height:1.5rem;
+    color:#E1E1E6 ;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+}.CommentForm textarea{
+    background-color:#121214 ;
+    width:100%;
+    color: aliceblue;
+    resize: none;
+    height: 6rem;
+    border:1px solid #00B37E;
+    border-radius: 8px;
+    color: var(--grey-100);
+    line-height:1.4;
+    padding: 1rem;
+    margin-top: 1rem;
+}.CommentForm button{
+    background-color:#00875F;
+    color:#FFFFFF;
+    font-family:'Roboto',sans-serif;
+    font-weight:bold;
+    line-height: 19px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius:8px;
+    margin-top:1rem;
+    cursor: pointer;
+    border: none;
+}.CommentForm button:disabled{
+ opacity:0.7;
+ cursor:not-allowed;
+}
+
+.CommentForm button:not(:disabled):hover{
+    background-color: #00B37E;
+    transition: background-color 0.1s;
+}.CommentForm footer{
+    visibility: hidden;
+    height: 0;
+}.CommentForm:focus-within footer{
+    visibility: visible;
+    height: 100%;
+    
+}.commentList{
+    margin-top: 2rem;
+}.divAvatar{
+    margin-top:2.5rem;
+}

@@ -1,0 +1,53 @@
+.comment{
+    margin: 0 2.5rem;
+    padding-bottom:1.5rem;
+    display: flex;
+}.comment >img{
+    height:3.125rem;
+    width: 3.125rem;
+}.commentBox{
+    flex:1;
+}.commentContent{
+    width:98%;
+    background-color:#29292E;
+    padding:1rem 1.359rem 1.56rem 1rem;
+    margin-left:1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}.commentContent button{
+    background-color: transparent;
+    color:var(--gray-400);
+    height:1.5rem;
+    border: none;
+    line-height: 0;
+    cursor: pointer;
+}.commentContent button:hover{
+  color:var(--red-500);
+}
+.authorAndTime>time{
+    margin: 0;
+    color: #8D8D99;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+}.applaudButton{
+    color:#8D8D99;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size:0.875rem;
+    line-height:1rem;
+    padding-left:1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}.applaudButton:hover{
+    color:#00B37E;
+}.applaudIcon{
+    margin-right: 0.625rem;
+}
+    
+.applaudCount::before{
+    content: "\2022";
+    padding: 0 0.25rem;
+}

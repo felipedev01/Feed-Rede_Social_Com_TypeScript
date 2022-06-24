@@ -1,0 +1,14 @@
+.Avatar{
+   height:3rem;
+   width: 3rem;
+   border-radius: 8px;
+  
+}.AvatarWithBorder{
+   height:3rem;
+   width: 3rem;
+   border-radius: 8px;
+   border: 1px solid  var(--gray-800);
+   box-sizing: initial;
+   outline: 2px solid var(--green-500);
+
+}
