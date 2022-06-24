@@ -1,8 +1,8 @@
 import {Avatar} from './Avatar.jsx'
 import Styles from './Sidebar.module.css'
-import EditIcon from '../Assets/edit.svg'
+//import EditIcon from '../Assets/edit.svg'
 
-console.log(EditIcon)
+
 
 export function Sidebar(){
 

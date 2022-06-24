@@ -3,7 +3,7 @@
  import {Avatar} from'./Avatar.jsx'
  import {format,formatDistanceToNow} from 'date-fns'
  import ptBR from 'date-fns/locale/pt-BR'
-import { useState } from 'react'
+import { FormEvent, useState,ChangeEvent, InvalidEvent } from 'react'
 
 interface author{
 
@@ -11,10 +11,16 @@ interface author{
   role:string;
   url:string;
 
-}interface postProps{
+}
+interface content{
+
+  type:'paragraph'| 'link';
+  content:string;
+}
+interface postProps{
     author:author;
     publishedAt:Date;
-    content:string;
+    content:content[]
 
 }
  export function Post({author,publishedAt,content}:postProps){
@@ -27,19 +33,19 @@ interface author{
   
   ])
 
-  function handleNewCommentInvalid(){
+  function handleNewCommentInvalid(event: InvalidEvent<HTMLTextAreaElement>){
 
     event.target.setCustomValidity('Preencha o campo comentário')
   }
 
-  function handleNewComment(){
+  function handleNewComment(event: ChangeEvent<HTMLTextAreaElement>){
    
     event.target.setCustomValidity('')
     setNewComment(event.target.value)
     console.log(newComment)
   }
 
-  function handleCreateComment(){
+  function handleCreateComment(event:FormEvent){
 
     
       event.preventDefault()
@@ -48,7 +54,7 @@ interface author{
     
      setNewComment([''])
      
-  } function deleteComment(commentToDelete){
+  } function deleteComment(commentToDelete:string){
 
     const commentsWithoutDeletedOne=comment.filter(comment =>{
       return comment !== commentToDelete;
